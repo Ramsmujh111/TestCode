@@ -6,9 +6,9 @@ function subsetOfSum(arr ,sub){
     let count = 0;
     for(let i = 0; i<arr.length; i++){
         // this is worst case when we are considering this
-        // if(arr[i] === sub){
-        //     count = count + 1
-        // }
+        if(arr[i] === sub){
+            count = count + 1
+        }
         for(let j = 0; j<i; j++ ){
             if(arr[i] + arr[j] === sub){
                 count = count+1;
